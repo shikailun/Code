@@ -1,5 +1,6 @@
 //创建了20个线程，在线程之间通过管道来传递信号。接到信号就唤醒，然后再传递信号给下一个线程，自己睡眠。 这个实验里单独考虑了给管道传递信号的额外开销，并在第一步就统计了出来。
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <sys/time.h>
 #include<pthread.h>
